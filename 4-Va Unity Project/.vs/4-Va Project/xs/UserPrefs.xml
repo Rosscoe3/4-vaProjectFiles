@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{F7EA012C-8929-9410-E27E-DE4FCDB23620}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Library/PackageCache/com.unity.shadergraph@5.7.2/Editor/Data/Util/SerializationHelper.cs">
+    <Files>
+      <File FileName="Library/PackageCache/com.unity.shadergraph@5.7.2/Editor/Data/Util/SerializationHelper.cs" Line="103" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="4-Va Project" expanded="True">
+            <Node name="Assets" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="da13f596-ea81-4844-95c9-6186755fa2a8" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
