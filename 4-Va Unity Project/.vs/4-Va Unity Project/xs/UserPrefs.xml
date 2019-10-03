@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{3941899F-9E8D-B344-F487-25A9F443B066}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SliderScript.cs">
+    <Files>
+      <File FileName="Assets/Assets/Scripts/SliderValue.cs" Line="36" Column="50" />
+      <File FileName="Assets/SliderScript.cs" Line="19" Column="2" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="4-Va Unity Project" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
+              <Node name="SliderScript.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="99365817-8db4-4de6-9f50-7a06a18ed50f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
