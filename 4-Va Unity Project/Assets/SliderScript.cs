@@ -14,6 +14,21 @@ public class SliderScript : MonoBehaviour
 
     public void setSliderValue(GameObject slider)
     {
-        water.gameObject.transform.position = new Vector3(0, slider.gameObject.GetComponent<Slider>().value, 0);
+        if (slider.gameObject.GetComponent<Slider>().value == 0)
+        {
+            water.gameObject.transform.position = new Vector3(0, -2f, 0);
+        }
+        else if (slider.gameObject.GetComponent<Slider>().value == 1)
+        {
+            water.gameObject.transform.position = new Vector3(0, -1f, 0);
+        }
+        else if (slider.gameObject.GetComponent<Slider>().value == 2)
+        {
+            water.gameObject.transform.position = new Vector3(0, 0, 0);
+        }
+        else if (slider.gameObject.GetComponent<Slider>().value == 3)
+        {
+            water.gameObject.transform.position = new Vector3(0, 1, 0);
+        }
     }
 }
