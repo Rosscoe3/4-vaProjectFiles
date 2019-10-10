@@ -8,18 +8,25 @@ using UnityEngine.UI;
 
 public class SendToGoogle : MonoBehaviour
 {
-    public float firstPageTime;
-    string firstPageTimeString;
-    bool pg1Timer = false;
+    public GameObject pg1, pg2;
+
+    public float firstPageTime, secondPageTime;
+    int numOfPages = 0;
+    bool pgTimer, pg1Counted, pg2Counted = false;
 
     [SerializeField]
     private readonly string BASE_URL = "https://docs.google.com/forms/d/e/1FAIpQLSchmYn3eRhFghjuvhNjnaWq2E1yJy52xp9Fnwo70r9HsZZdaw/formResponse";
 
     IEnumerator Post(string fullScreen)
     {
+        int fullPageTime = (int)firstPageTime + (int)secondPageTime;
+
         WWWForm form = new WWWForm();
         form.AddField("entry.2053915795", fullScreen);
         form.AddField("entry.30887264", firstPageTime.ToString());
+        form.AddField("entry.530696884", secondPageTime.ToString());
+        form.AddField("entry.923004832", fullPageTime.ToString());
+        form.AddField("entry.2038010638", numOfPages.ToString());
 
         byte[] rawData = form.data;
 #pragma warning disable CS0618//Type or member is obsolete
@@ -30,7 +37,6 @@ public class SendToGoogle : MonoBehaviour
         //using (UnityWebRequest WWW = UnityWebRequest.Post(BASE_URL, form))
         //{
         //    yield return WWW.SendWebRequest();
-
         //    if (WWW.isNetworkError || WWW.isHttpError)
         //    {
         //        Debug.Log(WWW.error);
@@ -44,28 +50,49 @@ public class SendToGoogle : MonoBehaviour
 
     void Update()
     {
-        if (pg1Timer)
+        if (pgTimer && pg1.activeSelf == true)
         {
-            firstPageTime = +Time.time;
+            firstPageTime = firstPageTime + Time.deltaTime;
         }
-        //Debug.Log(firstPageTime);
+        if (pgTimer && pg2.activeSelf == true)
+        {
+            secondPageTime = secondPageTime + Time.deltaTime;
+        }
+
+       Debug.Log("1st page time: " + firstPageTime);
+       Debug.Log("2nd page time: " + secondPageTime);
+        Debug.Log(numOfPages);
     }
 
     public void Send()
     {
         StartCoroutine(Post("yes"));
-        Debug.Log("Clicked");
+        Debug.Log("Sent!");
     }
 
-    public void PageOne()
+    public void PageTimer()
     {
-        if (pg1Timer)
+        if (pgTimer)
         {
-            pg1Timer = false;
+            pgTimer = false;
         }
         else
         {
-            pg1Timer = true;
+            pgTimer = true;
+        }
+    }
+
+    public void TurnPage(string pageName)
+    {
+        if (pageName == "1" && !pg1Counted)
+        {
+            numOfPages++;
+            pg1Counted = true;
+        }
+        if (pageName == "2" && !pg2Counted)
+        {
+            numOfPages++;
+            pg2Counted = true;
         }
     }
 }
