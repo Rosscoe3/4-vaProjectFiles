@@ -8,6 +8,9 @@ public class GoFullScreen : MonoBehaviour
     public GameObject cam2;
     public GameObject cam3;
 
+    public bool graphing;
+    public GameObject graphUI;
+
     public void FullScreenMode(GameObject camera)
     {
         Rect oldSize;
@@ -23,17 +26,21 @@ public class GoFullScreen : MonoBehaviour
         {
             oldSize = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
         }
-        Debug.Log("old:" + oldSize);
-
+        //Debug.Log("old:" + oldSize);
 
 
         if(buttonCounter % 2 == 0)
         {
             camera.gameObject.GetComponent<Camera>().rect = oldSize;
-            Debug.Log(buttonCounter);
-            Debug.Log(camera.gameObject.GetComponent<Camera>().rect);
+            //Debug.Log(buttonCounter);
+            //Debug.Log(camera.gameObject.GetComponent<Camera>().rect);
             cam2.SetActive(true);
             cam3.SetActive(true);
+
+            if (graphing)
+            {
+                graphUI.SetActive(true);
+            }
         }
         else
         {
@@ -41,6 +48,11 @@ public class GoFullScreen : MonoBehaviour
             camera.gameObject.GetComponent<Camera>().rect = fullscreen;
             cam2.SetActive(false);
             cam3.SetActive(false);
+
+            if (graphing)
+            {
+                graphUI.SetActive(false);
+            }
         }
         buttonCounter++;
     }
@@ -48,5 +60,9 @@ public class GoFullScreen : MonoBehaviour
     public void hideThisOne(GameObject camera2)
     {
         camera2.gameObject.SetActive(false);
+        if (graphing)
+        {
+            graphUI.SetActive(true);
+        }
     }
 }

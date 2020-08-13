@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - eCam
+  - gCam
+  - tCam
+  - vbarPlot
+  - fullscreen
+  - car
+  - human
   layers:
   - Default
   - TransparentFX
@@ -14,8 +21,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - BeachStuff
+  - Cars
   - 
   - 
   - 
@@ -40,4 +47,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: TextUi
+    uniqueID: 3033794667
+    locked: 0
+  - name: GraphUi
+    uniqueID: 251339675
     locked: 0

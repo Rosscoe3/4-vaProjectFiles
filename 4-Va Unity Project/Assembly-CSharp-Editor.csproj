@@ -63,6 +63,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Chart And Graph\Editor\AutoFloatInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\AxisInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\BarChartInspetor.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\CategoryDataEditor.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\CategoryLabelsInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\ChartDataEditor.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\ChartEditorCommon.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\ChartOrientedSizeInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\EditorMenu.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\EditorMenu.Full.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\GraphChartInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\GraphDataFillerEditor.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\GroupLabelsInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\ItemLabelsBaseEditor.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\ItemLabelsInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\MaterialTilingInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\PieChartInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\Playmaker\GraphPointActionEditor.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\RadarChartInspector.cs" />
+    <Compile Include="Assets\Chart And Graph\Editor\RenameWindow.cs" />
+    <Compile Include="Assets\Chart And Graph\InBeta\Editor\CandleChartInspector.cs" />
+    <Compile Include="Assets\LeanTween\Editor\LeanTweenDocumentationEditor.cs" />
+    <Compile Include="Assets\PathCreator\Examples\Scripts\Editor\PathSceneToolEditor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>/Users/ross/Documents/4-Va-Project/4-Va Unity Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
@@ -330,6 +353,21 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Logging">
+      <HintPath>/Users/ross/Documents/4-Va-Project/4-Va Unity Project/Assets/Plugins/GitHub/Editor/GitHub.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="sfw.net">
+      <HintPath>/Users/ross/Documents/4-Va-Project/4-Va Unity Project/Assets/Plugins/GitHub/Editor/sfw.net.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Unity.45">
+      <HintPath>/Users/ross/Documents/4-Va-Project/4-Va Unity Project/Assets/Plugins/GitHub/Editor/GitHub.Unity.45.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.UnityShim">
+      <HintPath>/Users/ross/Documents/4-Va-Project/4-Va Unity Project/Assets/Plugins/GitHub/Editor/GitHub.UnityShim.dll</HintPath>
+    </Reference>
+    <Reference Include="GitHub.Api.45">
+      <HintPath>/Users/ross/Documents/4-Va-Project/4-Va Unity Project/Assets/Plugins/GitHub/Editor/GitHub.Api.45.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/ross/Documents/4-Va-Project/4-Va Unity Project/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -705,9 +743,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{735881DD-C526-5A3C-0968-9CF20DDAFE53}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{3941899F-9E8D-B344-F487-25A9F443B066}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{DA4BDF12-728F-2AC0-4AC9-F65413F24915}</Project>
+      <Name>Assembly-CSharp-Editor-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{44B52008-50BA-E298-B6FA-BD271774150A}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{09725582-2C89-457B-F7DA-FEF24415B9DF}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{4A7399DB-7057-3938-AA98-FDDB27670DD1}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{8CC0EED2-57B4-DA90-F1AC-278EFC0D7820}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreator.csproj">
+      <Project>{79303EFD-FC10-93A9-59E7-12E8F3F08E51}</Project>
+      <Name>PathCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="PathCreatorEditor.csproj">
+      <Project>{5A058B81-6475-6BE2-BED7-E5EC35C121BB}</Project>
+      <Name>PathCreatorEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
