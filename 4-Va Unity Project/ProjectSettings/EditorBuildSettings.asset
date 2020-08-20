@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4-VAChap_2.unity
     guid: b1783652f2f844a3da32c620d1b671cb
+  - enabled: 1
+    path: Assets/Scenes/4-VAChap_3.unity
+    guid: 891fdb1647a884936990f048c8fbeea4
   - enabled: 0
     path: Assets/Scenes/Decryption.unity
     guid: 5ed78990c31494926b2471b4270fc260
