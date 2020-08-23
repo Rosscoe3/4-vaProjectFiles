@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-08-17T17:26:41.924-04:00
-  initializedAtString: 2020-08-17T14:37:40.099-04:00
+  lastUpdatedAtString: 2020-08-23T14:29:16.389-04:00
+  initializedAtString: 2020-08-23T14:29:16.360-04:00
   localBranches: []
   remoteBranches:
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
@@ -36,9 +38,15 @@ MonoBehaviour:
     subKeys:
     - Values:
       - HEAD
+      - master
     subKeyValues:
     - Values:
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/Rosscoe3/4-vaProjectFiles.git
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/Rosscoe3/4-vaProjectFiles.git
